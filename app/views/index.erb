@@ -1,0 +1,9 @@
+<h1>There are <%= @articles.count %> articles</h1>
+<% @articles.each do |article| %>
+  <a href="/articles/<%= article.id %>"><h2><%= article.title %></h2></a>
+  <p><%= article.content %></p>
+<% end %>
+
+
+
+<a href="/articles/new"><p>Create a New Article</p></a>
